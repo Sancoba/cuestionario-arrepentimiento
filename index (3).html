@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  <title>¿Cómo vivo el arrepentimiento? · Autoexploración</title>
+  <style>
+    :root{--ink:#20324a;--sub:#52657b;--brand:#225a78;--brand2:#14798b;--mint:#dcefed;--paper:#f5f8fb;--white:#fff;--line:#dce5eb;--focus:#f7c66b}
+    *{box-sizing:border-box}html{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 100% 0%,#e3f4f0,transparent 35%),linear-gradient(160deg,#f7f9fc,#ecf2f7);color:var(--ink);min-height:100vh}
+    .wrap{max-width:760px;margin:0 auto;padding:32px 18px 70px}header{text-align:center;margin-bottom:22px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--brand);font-size:.76rem;font-weight:800}
+    h1{font-size:clamp(2rem,6vw,3.3rem);line-height:1.1;letter-spacing:-.04em;margin:10px 0 12px}h2{font-size:clamp(1.35rem,4vw,1.85rem);line-height:1.22;margin:6px 0 14px}h3{margin:12px 0 7px}p{line-height:1.65}.muted{color:var(--sub)}.panel{background:var(--white);border:1px solid var(--line);box-shadow:0 15px 45px #29465a10;border-radius:22px;padding:clamp(22px,5vw,38px);margin:18px 0}
+    .hidden{display:none!important}.small{font-size:.89rem}.intro-list{padding-left:21px;line-height:1.8}.btn{appearance:none;border:0;border-radius:13px;background:var(--brand);color:#fff;font:inherit;font-weight:750;padding:15px 22px;cursor:pointer;min-height:48px}.btn:hover{background:#174760}.btn:focus-visible,.choice:focus-visible{outline:3px solid var(--focus);outline-offset:3px}.btn.alt{background:#ecf3f6;color:var(--brand)}.btn.alt:hover{background:#dae9ef}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;justify-content:space-between}.actions .btn{flex:1}.progress-head{display:flex;justify-content:space-between;gap:10px;font-size:.89rem;color:var(--sub);margin-bottom:8px}.bar{height:9px;background:#e8eff2;border-radius:100px;overflow:hidden;margin-bottom:26px}.fill{height:100%;background:linear-gradient(90deg,var(--brand),var(--brand2));transition:width .25s}.category{color:var(--brand2);font-weight:800;font-size:.83rem;text-transform:uppercase;letter-spacing:.08em}.question{font-size:clamp(1.22rem,3.5vw,1.55rem);font-weight:750;line-height:1.42;margin:15px 0 24px}.choices{display:grid;gap:11px}.choice{display:flex;align-items:center;gap:13px;width:100%;padding:16px;text-align:left;background:#fafcfd;border:2px solid var(--line);border-radius:13px;font:inherit;color:var(--ink);cursor:pointer}.choice[aria-pressed="true"]{border-color:var(--brand2);background:#e9f6f4}.dot{width:18px;height:18px;border:2px solid #93a9b7;border-radius:50%;flex:none}.choice[aria-pressed="true"] .dot{border:5px solid var(--brand2)}.warn{color:#9b3d1a;font-size:.9rem;margin-top:14px;font-weight:700}.result-total{text-align:center;padding:18px;background:#edf7f5;border-radius:16px;margin:20px 0}.result-total strong{display:block;font-size:2.2rem;color:var(--brand)}.metric{margin:20px 0}.metric-head{display:flex;justify-content:space-between;gap:12px;font-weight:700}.track{height:10px;background:#e7eff4;border-radius:40px;overflow:hidden;margin:9px 0}.track>div{height:100%;background:linear-gradient(90deg,#38a4a0,#246282);border-radius:40px}.note{background:#f5f9fb;border-left:4px solid #6ea8b7;padding:13px 16px;border-radius:7px;margin:16px 0}.reflection{margin-top:24px}.reflection li{margin:12px 0;line-height:1.55}.verse{font-style:italic;text-align:center;margin-top:26px;color:var(--sub)}footer{text-align:center;color:var(--sub);font-size:.8rem;line-height:1.5;margin-top:28px}@media(max-width:520px){.wrap{padding-top:23px}.actions{flex-direction:column-reverse}.actions .btn{width:100%}}
+    @media print{body{background:#fff}.no-print,header,footer{display:none!important}.wrap{max-width:100%;padding:0}.panel{border:0;box-shadow:none;padding:0}.track{border:1px solid #aaa}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+<header><div class="eyebrow">Autoexploración personal · Tema 4</div><h1>¿Cómo vivo el arrepentimiento?</h1><p class="muted">Reconocer. Reparar. Aprender. Cambiar.</p></header>
+<section id="welcome" class="panel">
+ <h2>Un espacio para reflexionar con sinceridad</h2>
+ <p>Este cuestionario te ayudará a explorar cómo reconoces tus errores, cómo te sientes después y qué haces para cambiar. También incluye una dimensión de reflexión cristiana.</p>
+ <ul class="intro-list"><li>16 afirmaciones en 4 áreas.</li><li>Responde pensando en <strong>los últimos 30 días</strong>.</li><li>No hay respuestas buenas o malas: elige lo que más se acerca a tu experiencia.</li><li>Verás tu resultado inmediatamente.</li><li><strong>No solicitamos datos personales ni guardamos tus respuestas.</strong> Si cierras o recargas la página, se pierden.</li></ul>
+ <p class="small muted">Esta es una herramienta de autoexploración, no una prueba psicológica validada ni un diagnóstico. Una puntuación no define tu valor como persona ni mide tu fe.</p>
+ <button class="btn" type="button" id="start">Comenzar cuestionario →</button>
+</section>
+<section id="quiz" class="panel hidden" aria-live="polite">
+ <div class="progress-head"><span id="count">Pregunta 1 de 16</span><span id="percent">0%</span></div><div class="bar" aria-label="Avance"><div class="fill" id="progress" style="width:0%"></div></div>
+ <div class="category" id="category"></div><div class="question" id="question"></div><div class="choices" id="choices" role="group" aria-label="Selecciona una respuesta"></div>
+ <p id="warning" class="warn hidden" role="alert">Selecciona una respuesta para continuar.</p>
+ <div class="actions"><button class="btn alt" type="button" id="back">← Anterior</button><button class="btn" type="button" id="next">Siguiente →</button></div>
+</section>
+<section id="results" class="panel hidden">
+ <div class="eyebrow">Tu reflexión personal</div><h2>Tu perfil de arrepentimiento</h2>
+ <p>Estas cifras muestran tus respuestas en cuatro aspectos. No indican cuánto vales, qué tan buena persona eres ni si Dios te acepta.</p>
+ <div class="result-total"><strong id="total">0 / 48</strong><span>Índice orientativo de reconocimiento y cambio</span></div>
+ <div id="metrics"></div>
+ <div class="note" id="interpretation"></div>
+ <h3>Una invitación al cambio</h3><p>El arrepentimiento no consiste solo en sentirse mal. También puede implicar reconocer el error, responsabilizarse, reparar cuando sea posible y elegir una forma distinta de actuar.</p>
+ <div class="reflection"><h3>Preguntas para reflexionar</h3><ol>
+ <li>¿Qué me cuesta más: reconocer que me equivoqué, pedir perdón o cambiar mi conducta?</li>
+ <li>¿Cuál es la diferencia entre sentir remordimiento por las consecuencias y arrepentirme genuinamente de mis acciones?</li>
+ <li>¿Qué situaciones me llevan a justificar mis errores en lugar de asumir mi responsabilidad?</li>
+ <li>¿Cómo puedo demostrar con acciones que mi arrepentimiento es sincero?</li>
+ <li>¿De qué manera buscar el perdón de Dios puede ayudarme a acercarme a Él en lugar de alejarme por vergüenza?</li>
+ <li>¿Qué hábito necesito abandonar y qué conducta debo comenzar a practicar?</li>
+ </ol></div>
+ <div class="verse"><p>«La tristeza que proviene de Dios produce el arrepentimiento que lleva a la salvación».</p><strong>2 Corintios 7:10 · paráfrasis</strong></div>
+ <div class="actions no-print"><button class="btn alt" id="restart" type="button">Volver a comenzar</button><button class="btn" id="print" type="button">Guardar mi reflexión en PDF</button></div>
+ <p class="small muted">Si guardas el PDF, permanecerá únicamente donde tú decidas guardarlo. La página no lo envía a ningún servidor.</p>
+</section>
+<footer>Cuestionario de reflexión psicológica y espiritual · Tu proceso es personal y privado</footer>
+</main>
+<script>
+'use strict';
+const SECTIONS=[
+ {name:'Reconocimiento y aceptación de los errores',short:'Reconocimiento',questions:[
+  ['Reconozco cuando me equivoco, incluso si nadie se da cuenta.',false],
+  ['Acepto que mis decisiones pueden afectar negativamente a otras personas.',false],
+  ['Me cuesta admitir que estoy equivocado cuando alguien me lo señala.',true],
+  ['Busco excusas o justifico mis acciones para evitar reconocer mi responsabilidad.',true]]},
+ {name:'Arrepentimiento y emociones',short:'Manejo emocional',questions:[
+  ['Después de hacer algo que considero incorrecto, siento pesar por lo ocurrido.',false],
+  ['Me preocupa más haber quedado mal ante los demás que el daño que pude causar.',true],
+  ['Cuando recuerdo un error, me quedo pensando en él durante mucho tiempo y me cuesta seguir adelante.',true],
+  ['Puedo reconocer que hice algo malo sin concluir que soy una persona sin valor.',false]]},
+ {name:'Responsabilidad y cambio',short:'Responsabilidad y cambio',questions:[
+  ['Cuando reconozco un error, tomo medidas para corregirlo si es posible.',false],
+  ['Pido perdón a las personas que he lastimado, aunque me resulte incómodo.',false],
+  ['Intento identificar qué me llevó a actuar mal para evitar repetirlo.',false],
+  ['Aunque digo que me arrepiento, suelo repetir la misma conducta sin intentar cambiarla.',true]]},
+ {name:'Arrepentimiento y vida espiritual',short:'Vida espiritual',questions:[
+  ['Cuando reconozco que he pecado, lo llevo delante de Dios con sinceridad.',false],
+  ['Busco el perdón de Dios y confío en su misericordia, en lugar de alejarme de Él por vergüenza.',false],
+  ['Estoy dispuesto a abandonar conductas que reconozco como contrarias a la voluntad de Dios.',false],
+  ['Procuro revisar mis actitudes y decisiones para mantener una relación sincera con Dios.',false]]}
+];
+const QUESTIONS=SECTIONS.flatMap((s,si)=>s.questions.map(([text,reverse])=>({text,reverse,section:si})));
+const ANSWERS=['Nunca','Pocas veces','Muchas veces','Casi siempre'];
+// Todas las respuestas permanecen solo en memoria; no se usan red, cookies ni almacenamiento local.
+let responses=Array(QUESTIONS.length).fill(null),current=0;
+const $=id=>document.getElementById(id);
+function show(id){for(const key of ['welcome','quiz','results'])$(key).classList.toggle('hidden',key!==id);window.scrollTo({top:0,behavior:'instant'});}
+function render(){
+ const q=QUESTIONS[current],value=responses[current];
+ $('count').textContent=`Pregunta ${current+1} de ${QUESTIONS.length}`;
+ $('percent').textContent=`${Math.round(current/QUESTIONS.length*100)}%`;
+ $('progress').style.width=`${current/QUESTIONS.length*100}%`;
+ $('category').textContent=SECTIONS[q.section].name;
+ $('question').textContent=q.text;
+ $('choices').replaceChildren();
+ ANSWERS.forEach((label,i)=>{
+  const button=document.createElement('button');button.type='button';button.className='choice';button.setAttribute('aria-pressed',String(value===i));
+  const dot=document.createElement('span');dot.className='dot';dot.setAttribute('aria-hidden','true');
+  const text=document.createElement('span');text.textContent=label;
+  button.append(dot,text);button.addEventListener('click',()=>{responses[current]=i;$('warning').classList.add('hidden');render();});$('choices').append(button);
+ });
+ $('back').disabled=current===0;$('back').style.visibility=current===0?'hidden':'visible';
+ $('next').textContent=current===QUESTIONS.length-1?'Ver mi resultado →':'Siguiente →';
+ $('warning').classList.add('hidden');
+}
+function score(q,i){return q.reverse?3-responses[i]:responses[i];}
+function finish(){
+ if(responses.some(x=>x===null))return;
+ const scores=SECTIONS.map((_,si)=>QUESTIONS.reduce((acc,q,i)=>acc+(q.section===si?score(q,i):0),0));
+ const total=scores.reduce((a,b)=>a+b,0);$('total').textContent=`${total} / 48`;
+ const messages=[
+  ['Reconocimiento','Explora qué te ayuda a admitir un error sin buscar excusas ni castigarte.'],
+  ['Manejo emocional','Practica distinguir el pesar que invita a reparar de la vergüenza o los pensamientos que te dejan estancado.'],
+  ['Responsabilidad y cambio','Elige una acción pequeña y concreta para reparar un daño o evitar repetir una conducta.'],
+  ['Vida espiritual','Puedes reflexionar sobre la sinceridad, la misericordia y los cambios que deseas vivir en tu relación con Dios.']
+ ];
+ const metrics=$('metrics');metrics.replaceChildren();
+ scores.forEach((n,i)=>{
+  const box=document.createElement('div');box.className='metric';
+  const head=document.createElement('div');head.className='metric-head';
+  const label=document.createElement('span');label.textContent=SECTIONS[i].short;
+  const value=document.createElement('span');value.textContent=`${n} / 12`;head.append(label,value);
+  const track=document.createElement('div');track.className='track';
+  const fill=document.createElement('div');fill.style.width=`${n/12*100}%`;track.append(fill);
+  const desc=document.createElement('p');desc.className='small muted';desc.textContent=messages[i][1];
+  box.append(head,track,desc);metrics.append(box);
+ });
+ const low=Math.min(...scores),lowIndices=scores.map((v,i)=>v===low?i:-1).filter(i=>i>=0);
+ const lowNames=lowIndices.map(i=>SECTIONS[i].short.toLowerCase());
+ $('interpretation').textContent='Según tus respuestas, '+(lowIndices.length===4?'las cuatro áreas merecen la misma atención.':`el área para explorar con más calma es ${lowNames.join(' y ')}.`)+' Esta es una orientación para reflexionar, no una clasificación clínica. Los puntajes de las cuatro áreas no deben utilizarse para comparar tu fe o tu valor con el de otras personas.';
+ show('results');
+}
+$('start').addEventListener('click',()=>{show('quiz');render();});
+$('back').addEventListener('click',()=>{if(current>0){current--;render();}});
+$('next').addEventListener('click',()=>{if(responses[current]===null){$('warning').classList.remove('hidden');return;}if(current===QUESTIONS.length-1)finish();else{current++;render();}});
+$('restart').addEventListener('click',()=>{responses=Array(QUESTIONS.length).fill(null);current=0;show('welcome');});
+$('print').addEventListener('click',()=>window.print());
+</script>
+</body>
+</html>
